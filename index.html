@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="mainDiv">
+    <div class="borderDiv">
+        <p id="title">   </p>
+        <input type="text" class="display" placeholder="0" readonly id="result">
+        <div class="buttons">
+            <div class="btn btn-clr" onclick="calcClear()"><p class="btn-items">AC</p></div>
+            <div class="btn btn-clr" onclick="removeLastDigit()"><p class="btn-items">&#x232B;</p></div>
+            <div class="btn" onclick="displayContent('%')"><p class="btn-items">%</p></div>
+            <div class="btn" onclick="displayContent('/')"><p class="btn-items">/</p></div>
+            <div class="btn" onclick="displayContent('7')"><p class="btn-items">7</p></div>
+            <div class="btn" onclick="displayContent('8')"><p class="btn-items">8</p></div>
+            <div class="btn" onclick="displayContent('9')"><p class="btn-items">9</p></div>
+            <div class="btn" onclick="displayContent('*')"><p class="btn-items">&#215;</p></div>
+            <div class="btn" onclick="displayContent('4')"><p class="btn-items">4</p></div>
+            <div class="btn" onclick="displayContent('5')"><p class="btn-items">5</p></div>
+            <div class="btn" onclick="displayContent('6')"><p class="btn-items">6</p></div>
+            <div class="btn" onclick="displayContent('-')"><p class="btn-items">-</p></div>
+            <div class="btn" onclick="displayContent('1')"><p class="btn-items">1</p></div>
+            <div class="btn" onclick="displayContent('2')"><p class="btn-items">2</p></div>
+            <div class="btn" onclick="displayContent('3')"><p class="btn-items">3</p></div>
+            <div class="btn" onclick="displayContent('+')"><p class="btn-items">+</p></div>
+            <div class="btn zero" onclick="displayContent('0')"><p class="btn-items">0</p></div>
+            <div class="btn" onclick="displayContent('.')"><p class="btn-items">.</p></div>
+            <div class="btn eq" onclick="Calcoutput()"><p class="btn-items">=</p></div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./main.js"></script>
+</html>
